@@ -8,7 +8,7 @@ print ("Enter a value")
 b=int(input())
 print ("value of b =",b)
 c=a+b
-print ("value of c =",c)"""
+print ("value of c =",c)
 print ("Enter a value")
 a=float(input())
 print ("value of a =",a)
@@ -18,3 +18,11 @@ print ("value of b =",b)
 c=a+b
 print ("value of c =",c)
 print("Raguraman")
+print ("Enter a value")
+a=str(input())
+print ("value of a =",a)
+print ("Enter a value")
+b=str(input())
+print ("value of b =",b)
+c=(a+b)
+print ("value of c =",int(c))"""
