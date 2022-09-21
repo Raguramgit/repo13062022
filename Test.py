@@ -26,3 +26,11 @@ b=str(input())
 print ("value of b =",b)
 c=(a+b)
 print ("value of c =",int(c))"""
+print ("Enter a value")
+a=float(input())
+print("value of a =",a)
+print ("Enter a value")
+b=float(input())
+print("value of a =",b)
+c=a+b
+print("value of c =",c)
