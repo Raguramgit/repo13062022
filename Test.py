@@ -31,6 +31,6 @@ a=float(input())
 print("value of a =",a)
 print ("Enter a value")
 b=float(input())
-print("value of a =",b)
+print("value of b =",b)
 c=a+b
 print("value of c =",c)
