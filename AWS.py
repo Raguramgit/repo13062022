@@ -11,7 +11,7 @@ user = user.create(
             'Value': 'IT'
         },
     ]
-)"""
+)
 import boto3
 s3 = boto3.resource('s3')
 bucket = s3.Bucket('ram22092022')
@@ -22,4 +22,10 @@ response = bucket.create(
     },
     ObjectLockEnabledForBucket=False,
     ObjectOwnership='BucketOwnerPreferred'
+)"""
+import boto3
+s3 = boto3.resource('s3')
+bucket = s3.Bucket('ram22092022')
+response = bucket.delete(
+    ExpectedBucketOwner='545965103554'
 )
