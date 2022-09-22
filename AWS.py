@@ -31,4 +31,5 @@ response = bucket.delete(
 )"""
 import boto3
 s3 = boto3.resource('s3')
-s3.Bucket('ram22092022').upload_file(r'C:\Users\63486\Documents\PF.jpg','PF.jpg')
+s3.Bucket('ram22092022').upload_file('C:\\Users\\63486\\Documents\\PF.jpg','PF.jpg')
+#s3.Bucket('ram22092022').upload_file(r'C:\Users\63486\Documents\PF.jpg','PF.jpg')  This will also work for file upload
