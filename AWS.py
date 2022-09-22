@@ -22,10 +22,13 @@ response = bucket.create(
     },
     ObjectLockEnabledForBucket=False,
     ObjectOwnership='BucketOwnerPreferred'
-)"""
+)
 import boto3
 s3 = boto3.resource('s3')
 bucket = s3.Bucket('ram22092022')
 response = bucket.delete(
     ExpectedBucketOwner='545965103554'
-)
+)"""
+import boto3
+s3 = boto3.resource('s3')
+s3.Bucket('ram22092022').upload_file(r'C:\Users\63486\Documents\PF.jpg','PF.jpg')
