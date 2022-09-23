@@ -28,8 +28,16 @@ s3 = boto3.resource('s3')
 bucket = s3.Bucket('ram22092022')
 response = bucket.delete(
     ExpectedBucketOwner='545965103554'
-)"""
+)
 import boto3
 s3 = boto3.resource('s3')
-s3.Bucket('ram22092022').upload_file('C:\\Users\\63486\\Documents\\PF.jpg','PF.jpg')
-#s3.Bucket('ram22092022').upload_file(r'C:\Users\63486\Documents\PF.jpg','PF.jpg')  This will also work for file upload
+s3.Bucket('ram22092022').upload_file('C:\\Users\\63486\\Documents\\PF.jpg','PF.jpg')"""
+import boto3
+ec2 = boto3.resource('ec2')
+instances = ec2.create_instances(
+        ImageId="ami-0f62d9254ca98e1aa",
+        MinCount=1,
+        MaxCount=1,
+        InstanceType="t2.micro",
+        KeyName="AWSkey"
+    )
