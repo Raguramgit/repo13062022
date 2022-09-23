@@ -32,12 +32,23 @@ response = bucket.delete(
 import boto3
 s3 = boto3.resource('s3')
 s3.Bucket('ram22092022').upload_file('C:\\Users\\63486\\Documents\\PF.jpg','PF.jpg')"""
-import boto3
+"""import boto3
 ec2 = boto3.resource('ec2')
 instances = ec2.create_instances(
         ImageId="ami-0f62d9254ca98e1aa",
         MinCount=1,
         MaxCount=1,
         InstanceType="t2.micro",
-        KeyName="AWSkey"
-    )
+        KeyName="Office Laptop"
+    )"""
+"""import boto3
+ec2 = boto3.resource('ec2')
+instance = ec2.Instance('i-032b8e4037f67a66b')
+response = instance.stop(
+    Force=True
+)"""
+"""import boto3
+ec2 = boto3.resource('ec2')
+instance = ec2.Instance('i-032b8e4037f67a66b')
+response = instance.start(
+)"""
